@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #b9b9b9;
+            height: 39px;
+            padding: 15px 13px 34px 561px;
+        }
+
+        .navbar .text {
+            font-size: 55px;
+            font-family: JuraLight;
+            color: #FFFFFF;
+        }
+
+        @font-face {
+            font-family: JuraLight;
+            src: url(asset/font/JuraLight.ttf);
+        }
+
+        @font-face {
+            font-family: InterRegular;
+            src: url(asset/font/Inter-Regular.ttf)
+        }
+
+        .wrapper {
+            display: flex;
+            height: 600px;
+        }
+
+        .kolom-bio {
+            width: 40%;
+            background: linear-gradient(180deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 67%);
+            font-family: InterRegular;
+        }
+
+        .kolom-portfolio {
+            width: 53%;
+            background: #ffffff;
+            overflow-y: scroll;
+            padding-left: 7%;
+            padding-top: 5%;
+        }
+
+        .fotoku {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: solid 5px #ffff;
+            margin: 40px auto 30px auto;
+            display: block;
+        }
+
+        .my-name p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 30px;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .my-job{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+        }
+
+        .my-job p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .currently {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+
+        .currently p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 17px;
+        }
+
+        .currently-logo {
+            width: max-content;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .currently-logo img {
+            width: 150px;
+            margin-left: 19px;
+        }
+
+        .kolom-portfolio {
+            font-family: InterRegular;
+        }
+
+        .porto-item {
+            margin-bottom: 45px;
+        }
+
+        .porto-item .head {
+            display: flex;
+        }
+
+        .porto-item .circle {
+            font-size: 40px;
+            border-radius: 50%;
+            background-color: #f5f566;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            margin-right: 17px;
+        }
+
+        .porto-item .title {
+            font-size: 27px;
+            width: 493px;
+        }
+
+        .kolom-portfolio .body{
+            margin-top: 13px;
+            margin-left: 59px;
+            width: 550px;
+        }
+
+        .body > div {
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="text">PORTOFOLIO</div>
+    </div>
+    <div class="wrapper">
+        <div class="kolom-bio">
+            <img class="fotoku" src="asset/images/fotoku.jpg">
+            <div class="my-name">
+                <p>Hi! My Name is</p> 
+                <p>Rafif Fikri Fathoni</p>
+            </div>
+            <div class="my-job">
+                <p>I’m a Professional Web Developer</p>
+            </div>
+            <div class="currently">
+                <p>Currently I'm using:</p>
+            </div>
+            <div class="currently-logo">
+                <img src="asset/images/laravel-logo.png">
+                <img src="asset/images/bootstrap-logo.png">
+            </div>
+        </div>
+        <div class="kolom-portfolio">
+            <div class="porto-item">
+                <div class="head">
+                    <div class="circle">1</div>
+                    <div class="title">Integrasi API Payment BCA dengan ISP server</div>
+                </div>
+                <div class="body">
+                    <div class="date">Februari-Maret 2022</div>
+                    <div class="company">Klien: PT Jaringan Inovasi Nusantara</div>
+                    <div class="description">Dalam project freelance ini saya 
+                        berkesempatan untuk membantu PT Jaringan Inovasi Nusantara 
+                        melakukan integrasi ISP Server mereka dengan API Payment 
+                        dari BCA dengan framework Laravel</div>
+                </div>
+            </div>
+            <div class="porto-item">
+                <div class="head">
+                    <div class="circle">2</div>
+                    <div class="title" style="padding-top: 6px;">Magang di PT Idejualan Creative</div>
+                </div>
+                <div class="body">
+                    <div class="date">Februari-Mei 2022</div>
+                    <div class="company">Perusahaan: PT Idejualan Creative</div>
+                    <div class="description">Saya mendapat kesempatan untuk mengikuti 
+                        program magang di PT Idejualan Creative 
+                        selama 3 bulan dengan posisi backend (Laravel)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
